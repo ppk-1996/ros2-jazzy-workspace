@@ -1,0 +1,21 @@
+[tool.ruff]
+# Exclude directories you don't want to lint.
+exclude = [
+    "build",
+    "install",
+    ".venv",
+    "venv",
+    "tests",
+    "log"
+]
+
+# Only report issues matching these codes.
+lint.select = [
+    "ANN",  # Check for missing type annotations.
+    "F",    # Pyflakes errors.
+    "E",    # PEP8 style errors.
+    "C",    # Complexity and stylistic issues.
+]
+
+line-length = 88
+target-version = "py312"
